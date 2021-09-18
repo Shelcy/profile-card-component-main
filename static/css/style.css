@@ -1,0 +1,95 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../images/bg-pattern-top.svg') no-repeat -5.1cm -11cm, url('../images/bg-pattern-bottom.svg') no-repeat 20.4cm  10cm, var(--dark-cyan);
+  background-size: 60%;
+  background-color: var(--dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.card {
+  width: 300px;
+  background-color: var(--white);
+  border-radius: 10px;
+  position: relative;
+}
+
+.card .background img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card .main {
+  display: grid;
+}
+
+.card .main img {
+  border-radius: 100px;
+  border: solid 6px var(--white);
+  margin: -56px auto 0.3rem;
+}
+
+.information {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: solid 0.5px #96969633;
+}
+
+.title {
+  color: var(--desaturated-blue);
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.title > span {
+  color: var(--dark-gray);
+  font-weight: initial;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
+
+.title > span:nth-child(1) {
+  font-size: 18px;
+  margin-left: 2%;
+}
+
+
+
+@media (max-width: 800px) and (min-width: 557px){
+  .container{ background: url('../images/bg-pattern-top.svg') no-repeat -7cm -4.5cm, url('../images/bg-pattern-bottom.svg') no-repeat 9cm  11.7cm, var(--dark-cyan);
+    background-size: 80vw;
+  }
+}
+
+@media (max-width: 556px){
+  .card {
+    width: 90%;
+    
+  }
+  .container{ background: url('../images/bg-pattern-top.svg') no-repeat -7cm -4.5cm, url('../images/bg-pattern-bottom.svg') no-repeat 5cm  11.7cm, var(--dark-cyan);
+      background-size: 120vw;
+    }
+}
