@@ -76,7 +76,21 @@ body {
   margin-left: 2%;
 }
 
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--white);
+}
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--dark-cyan);
+}
 
 @media (max-width: 800px) and (min-width: 557px){
   .container{ background: url('../images/bg-pattern-top.svg') no-repeat -7cm -4.5cm, url('../images/bg-pattern-bottom.svg') no-repeat 9cm  11.7cm, var(--dark-cyan);
